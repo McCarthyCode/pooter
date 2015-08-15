@@ -58,7 +58,7 @@ $(document).ready(function () {
         $("<tr>").append(
           $("<td>").text("Overviewer"),
           $("<td>").append(
-            $("<a>").attr("href", this.overviewer()).text(this.overviewer())
+            $("<a>").attr("href", this.overviewer()).text("link")
           )
         )
       )

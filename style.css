@@ -1,8 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
 body {
   font-family: 'Open Sans', sans-serif;
-  
-    margin: auto;
+  margin: auto;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 .container{
   margin: 10px auto;
