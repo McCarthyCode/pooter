@@ -1,0 +1,51 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
+body {
+  font-family: 'Open Sans', sans-serif;
+  
+    margin: auto;
+}
+.container{
+  margin: 10px auto;
+}
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+.navbar-brand{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.navbar{
+  background: linear-gradient(#eef, #dfe3e5); 
+  background-color: #dfe3e5;
+  margin-bottom: 0;
+}
+.bevel {
+  vertical-align: middle;
+  font-size: 1em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #eee;
+/*  color: black;*/
+  color: #d7dee1;
+}
+.bevel>li>a:hover {
+  background: none;
+}
+.nav-pills>li>a {
+  color: dimgray;
+}
+.nav-pills>li>a:hover {
+  color: black;
+}
+.pull-right>li>a {
+  margin-bottom: 0;
+  background-color: white;
+}
+.nav-pills {
+  vertical-align: middle;
+}
+#head{
+  margin-top: 0;
+  height:400px;  
+  background: url(cover.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
