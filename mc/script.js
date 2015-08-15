@@ -36,7 +36,7 @@ $(document).ready(function () {
   };
 
   Server.prototype.overviewer = function () {
-    return "http://mattmc318.tk/mc/" + this.id + "/index.html";
+    return "http://" + this.IP + "/mc/" + this.id + "/index.html";
   };
 
   Server.prototype.append = function () {
