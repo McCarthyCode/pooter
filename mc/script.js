@@ -7,8 +7,7 @@ $(document).ready(function () {
   var Server, temp, servers, i, j;
   
   Server = function () {
-    this.IP = "67.162.103.239";
-//    this.port = "25565";
+    this.IP = "65.79.132.130";
     this.status = "Running";
   };
 
@@ -16,8 +15,8 @@ $(document).ready(function () {
     this.name = name;
   };
 
-  Server.prototype.port = function (port) {
-    this.port = port;
+  Server.prototype.srv = function (srv) {
+    this.srv = srv;
   };
 
   Server.prototype.mode = function (mode) {
@@ -36,7 +35,7 @@ $(document).ready(function () {
   };
 
   Server.prototype.overviewer = function () {
-    return "http://" + this.IP + "/mc/" + this.id + "/index.html";
+    return "http://" + this.IP + ":100/mc/" + this.id + "/index.html";
   };
 
   Server.prototype.append = function () {
@@ -45,7 +44,7 @@ $(document).ready(function () {
       $("<table>").attr("class", "table table-striped table-bordered").attr("id", this.id).append(
         $("<tr>").append(
           $("<td>").text("IP"),
-          $("<td>").text(this.IP + ':' + this.port)
+          $("<td>").text(this.srv + ".mattmc318.tk")
         ),
         $("<tr>").append(
           $("<td>").text("Status"),
@@ -66,14 +65,18 @@ $(document).ready(function () {
   };
   
   servers = [
-    ["Server 1", "25565", 0, "server1"],
-    ["Server 2", "9999", 0, "server2"]
+    ["Mushroom Kingdom", "mc1", 0, "server1"],
+    ["Survival", "mc2", 0, "server2"],
+    ["Creative", "mc3", 1, "server3"],
+    ["Asshole Town", "mc4", 1, "server4"],
+    ["Ocarina of Time", "mc5", 1, "server5"],
+    ["Twilight Forest Mod", "mc6", 0, "server6"]
   ];
   
   for (i = 0; i < servers.length; i += 1) {
     temp = new Server();
     temp.name(servers[i][0]);
-    temp.port(servers[i][1]);
+    temp.srv(servers[i][1]);
     temp.mode(servers[i][2]);
     temp.id(servers[i][3]);
     temp.append();
